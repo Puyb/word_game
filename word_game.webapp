@@ -9,5 +9,7 @@
     "name": "Stéphane Puybareau",
     "url": "http://puyb.net/"
   },
+  "launch_path": "word_game.html",
+  "orientation": ["portrait"],
   "default_locale": "fr"
 }

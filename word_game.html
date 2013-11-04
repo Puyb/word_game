@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Word Game!</title>
+        <meta name="description" content="Word game. Find word in a grid.">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css"><html>
+    </head>
+    <body>
+        <div id="info"></div>
+        <div id="points_counter"></div>
+        <div id="grid"></div>
+        <div id="menu">
+            <button id="new-game">Nouvelle grille</button>
+            <button id="resolve">Donner la solution</button>
+            <div id="results"></div>
+        </div>
+        <div id="points">
+            <span></span>
+        </div>
+        <audio src="media/wrong.wav" id="wrong_sound"></audio>
+        <audio src="media/correct.wav" id="correct_sound"></audio>
+        <audio src="media/back.wav" id="back_sound"></audio>
+    </body>
+    <script language="javascript" src="zepto.js"></script>
+    <script language="javascript" src="words_fr.js"></script>
+    <script language="javascript" src="word_game.js"></script>
+</html>
