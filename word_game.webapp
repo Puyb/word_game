@@ -1,0 +1,13 @@
+{
+  "name": "Word Game",
+  "description": "",
+  "launch_path": "/",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Stéphane Puybareau",
+    "url": "http://puyb.net/"
+  },
+  "default_locale": "fr"
+}

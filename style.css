@@ -1,0 +1,143 @@
+body {
+    background: #666666;
+}
+
+#grid div {
+    position: absolute;
+    width: 64px; 
+    height: 64px;
+    border: 3px solid black;
+    border-radius: 7px;
+    font-size: 45px;
+    text-align: center;
+    float: left;
+    transition-property: left, top, transform, background;
+    transition-duration: .5s;
+    background: white;
+}
+#grid div {
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: -moz-linear-gradient( center top, #f9f9f9 5%, #bbb 100% );
+    background-color: #f9f9f9;
+    text-indent: 0;
+    border: 2px solid #bfbdbf;
+    color: #363536;
+    font-family: Arial;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+
+#grid div.top { transform: scale(.5); }
+
+#grid {
+    position: absolute;
+    left: 0; top: 0;
+    right: 0; bottom: 0;
+}
+
+#info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+
+    overflow: hidden;
+    margin: 0;
+    background: -moz-linear-gradient( center top, #c66a00 0%, #b54d17 100% );
+    background-color: red;
+    border-bottom: 1px solid #933212;
+    box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px;
+}
+#points_counter {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    text-align: right;
+    width: 50%;
+    color: white;
+}
+
+#points {
+    display: none;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 10px;
+    font-size: 40px;
+    z-index: 10;
+    color: #ffff00;
+    text-shadow: 2px 2px 1px #111;
+}
+
+#points img {
+    position: absolute;
+}
+
+@keyframes shake {
+    0%, 100%                { transform: translateX(0) scale(.5); }
+    10%, 30%, 50%, 70%, 90% {
+       transform: translateX(-10px) scale(.5);
+       background: -moz-linear-gradient( center top, #fe1a00 0%, #ce0100 100% );
+       background-color: red;
+       color: #ffffff;
+       text-shadow: 1px 1px 0px #b23e35;
+}
+
+    20%, 40%, 60%, 80%      { transform: translateX(10px) scale(.5); }
+}
+
+.shake {
+    animation-name: shake;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+@keyframes pulse {
+    0%       { transform: scale(.5); }	
+    50%, 100% { transform: scale(.5); }	
+    25%, 75%  {
+       transform: scale(.6);
+       background: -moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+       background-color: #77d42a;
+ }
+
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+@keyframes explode {
+    0%  { transform: scale(1); opacity: 1;}	
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1.3); opacity: 0; }	
+}
+
+.explode {
+    animation-name: explode;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    display: block;
+}
+
+#menu {
+    display: none;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    height: 80%;
+    overflow: scroll;
+    top: 50px;
+    background: rgba(255, 255, 255, .9);
+    border: 3px solid #aaaaaa;
+    border-top: none;
+}
+
+
